@@ -5,7 +5,11 @@ import Content from "./components/Content/Content";
 import withAuthenticate from "./authentication/withAuthenticate";
 
 const Placeholder = () => {
-  return <div>Please log in to view content</div>;
+  return (
+    <div style={{ fontSize: "20px", color: "red" }}>
+      Please log in to view content
+    </div>
+  );
 };
 
 const ComponentFromWithAuthenticate = withAuthenticate(Content)(Placeholder);
